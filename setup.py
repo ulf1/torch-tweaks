@@ -8,7 +8,7 @@ def read(fname):
 
 setup(name='torch-tweaks',
       version='0.1.0',
-      description='lorem ipsum',
+      description='Utility functions for PyTorch.',
       long_description=read('README.md'),
       long_description_content_type='text/markdown',
       url='http://github.com/ulf1/torch-tweaks',

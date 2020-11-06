@@ -1,5 +1,5 @@
 # torch-tweaks
-
+Utility functions for PyTorch.
 
 ## Table of Contents
 * [Installation](#installation)
