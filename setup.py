@@ -19,5 +19,5 @@ setup(name='torch-tweaks',
       install_requires=[
           'setuptools>=40.0.0',
           'torch>=1.0.0'],
-      python_requires='>=3.8',
+      python_requires='>=3.6',
       zip_safe=False)
