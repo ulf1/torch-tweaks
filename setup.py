@@ -17,6 +17,7 @@ setup(name='torch-tweaks',
       license='MIT',
       packages=['torch-tweaks'],
       install_requires=[
-          'setuptools>=40.0.0'],
+          'setuptools>=40.0.0',
+          'torch>=1.0.0'],
       python_requires='>=3.8',
       zip_safe=False)
