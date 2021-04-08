@@ -1,16 +1,21 @@
 from setuptools import setup
+import pypandoc
 
 
-def read(fname):
-    import os
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+def get_version(path):
+    with open(path, "r") as fp:
+        lines = fp.read()
+    for line in lines.split("\n"):
+        if line.startswith('__version__'):
+            delim = '"' if '"' in line else "'"
+            return line.split(delim)[1]
+    raise RuntimeError("Unable to find version string.")
 
 
 setup(name='torch-tweaks',
-      version='0.1.0',
+      version=get_version("torch_tweaks/__init__.py"),
       description='Utility functions for PyTorch.',
-      long_description=read('README.md'),
-      long_description_content_type='text/markdown',
+      long_description=pypandoc.convert('README.md', 'rst'),
       url='http://github.com/ulf1/torch-tweaks',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
@@ -20,4 +25,4 @@ setup(name='torch-tweaks',
           'setuptools>=40.0.0',
           'torch>=1.0.0'],
       python_requires='>=3.6',
-      zip_safe=False)
+      zip_safe=True)
