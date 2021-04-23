@@ -19,10 +19,9 @@ setup(name='torch-tweaks',
       url='http://github.com/ulf1/torch-tweaks',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
-      license='MIT',
+      license='Apache License 2.0',
       packages=['torch_tweaks'],
       install_requires=[
-          'setuptools>=40.0.0',
           'torch>=1.0.0'],
       python_requires='>=3.6',
-      zip_safe=True)
+      zip_safe=False)
