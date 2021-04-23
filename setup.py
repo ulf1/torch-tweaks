@@ -1,5 +1,4 @@
 from setuptools import setup
-import pypandoc
 
 
 def get_version(path):
@@ -15,7 +14,7 @@ def get_version(path):
 setup(name='torch-tweaks',
       version=get_version("torch_tweaks/__init__.py"),
       description='Utility functions for PyTorch.',
-      long_description=pypandoc.convert('README.md', 'rst'),
+      long_description='README.rst',
       url='http://github.com/ulf1/torch-tweaks',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
@@ -24,4 +23,4 @@ setup(name='torch-tweaks',
       install_requires=[
           'torch>=1.0.0'],
       python_requires='>=3.6',
-      zip_safe=False)
+      zip_safe=True)
