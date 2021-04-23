@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/torch-tweaks.svg)](https://badge.fury.io/py/torch-tweaks)
+[![torch-tweaks](https://snyk.io/advisor/python/torch-tweaks/badge.svg)](https://snyk.io/advisor/python/torch-tweaks)
+
+
 # torch-tweaks
 Utility functions for PyTorch.
 
